@@ -1,0 +1,152 @@
+body {
+  background-image: url(./assets/fondo1.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.foto {
+  background-image: url(./assets/foto.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: auto;
+}
+
+.cssbuttons-io-button {
+  width: 23%;
+  margin: 0 auto;
+  background: #a370f0;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+.mitad1 {
+  flex: 1;
+  text-align: center;
+}
+
+.mitad2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 180px;
+  margin-left: 30px;
+  padding: 30px;
+}
+
+.mitad2 h1 {
+  font-size: 2.2em;
+  max-width: 100%;
+}
+
+.mitad2 h2 {
+  font-size: 1.2em;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.mitad2 h3 {
+  font-size: 1em;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .mitad2 {
+    width: 100%;
+    padding: 10px;
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .cssbuttons-io-button {
+    width: 40%;
+  }
+
+  .cssbuttons-io-button span {
+    font-size: 0.8em;
+  }
+
+  
+.mitad2 h1 {
+  font-size: 1.8em;
+  max-width: 100%;
+}
+
+.mitad2 h2 {
+  font-size: 1em;
+  max-width: 100%;
+  margin-bottom: 30px;
+}
+
+.mitad2 h3 {
+  font-size: 0.7em;
+  max-width: 100%;
+}
+
+}
+
